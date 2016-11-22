@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv}% Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+%Support umlauts
+\usepackage[utf8]{inputenc}
+
+%Support quotes in both German and English
+\usepackage[autostyle]{csquotes}
+
+%Multi language babel support
+\usepackage[ngerman,english]{babel} % makes ENGLISH content
+%\usepackage[english,ngerman]{babel} % makes GERMAN content
+\newcommand{\babel}[2]{\ifnum\pdfstrcmp{\languagename}{english}=0 {#2}\else{#1}\fi}
+\newcommand{\babelDE}[1]{\ifnum\pdfstrcmp{\languagename}{ngerman}=0 {#1}\fi}
+\newcommand{\babelEN}[1]{\ifnum\pdfstrcmp{\languagename}{english}=0 {#1}\fi}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+
+\newcommand*{\SignatureAndDate}[1]{%
+  \par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}%
+  \par\noindent\makebox[2.5in][l]{#1}      \hfill\makebox[2.0in][l]{Datum}%
+}%
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Max Leonard} % Your first name
+\familyname{Inden} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Biemsmaar 4c}{Wachtberg, \babel{Deutschland}{Germany}}
+\mobile{+49 178 1493411}
+\phone{+49 228 9516149}
+\email{IndenML@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0pt]{profile-picture.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\babel{Bildung}{Education}}
+\cventry{2013 - 2016}{\babel{Bachelor Wirtschaftsinformatik}{Bachelor Information Systems}}{\enquote{Westfälische Wilhelms-Universität Münster}}{}{}{}
+
+\cventry
+{2016}
+{\babel{Projektseminar}{Project seminar}}
+{\babel{Entwicklung einer Smartphone-App}{Development of a Mobile App \& Back End}}
+{}
+{}
+{Eine mobile Applikation für den gesamten Wirtschaftswissenschaftenfachbereich der Universität, welche einem Studenten alltägliche digitale Prozesse im Rahmen seines Studiums auf dem Smartphone ermöglicht und vereinfacht.}
+
+\cventry
+{2016}
+{\babel{Bachelorarbeit}{Bachelor thesis}}
+{\enquote{Westfälische Wilhelms-Universität Münster}}
+{}
+{}
+{\babel{Konzeption eines Datenstrukturdialekts und Entwicklung einer Web-Applikation für das Metadatenmanagement}{Conception of a datastructure dialect and development of a web application for metadata management}}
+
+\cventry{2015 - 2016}{\babel{Auslandssemester im Bachelor- und Master-Programm Information Systems}{Exchange semester in the bachelor and master program Information Systems}} {\enquote{\babel{Universität Agder}{University of Agder}}} {Kristiansand, \babel{Norwegen}{Norway}}{} {\babel{Teilnahme an den Kursen \textit{Open Source}, Entwicklung einer mobilen Applikation zur Vorlesungsunterstützung, \textit{Hands-ob-eBusiness for Entrepreneurs}, Entwicklung eines sowohl mobilen als auch browserfähigen Online-Shops, \textit{IT and Management} und \textit{Consumer Behaviour}}{Participation in the courses \textit{Open Source}, development of a mobile lecture support application), \textit{Hands-on-eBusiness for Entrepreneurs}, development of a both mobile and desktop web shop, \textit{IT and Management} and \textit{Consumer Behaviour}}}
+\cventry{2013}{\babel{Allgemeine Hochschulreife}{Finished Highschool}}{}{}{}{\babel{Notenschnitt 1,2}{Grade point average 1.2}}
+\cventry{2010 - 2011}{\babel{Auslandsaufenthalt}{Stay abroad}}{\babel{Ein halbes Jahr in USA South Carolina}{half a year in USA South Carolina}}{}{}{}
+\cventry{2004 - 2013}{\babel{Gymnasium}{Highschool}}{\enquote{Amos-Comenius-Gymnasium}}{}{}{}
+\cventry{2000 - 2004}{\babel{Grundschule}{Elementary school}}{\enquote{Katholische Grundschule Villip}}{}{}{} 
+
+%\section{Masters Thesis}
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\babel{Praktische Erfahrungen}{Experience}}
+
+%\subsection{Vocational}
+
+\cventry{2016 - \babel{jetzt}{now}}{\babel{Angestellter}{Employee}}{\enquote{innoscale AG}, \babel{Software-Entwickler}{software-developer}}{}{}{}
+\cventry{2014 - 2016}{\babel{Werksstudent}{Working student}}{\enquote{innoscale AG}, \babel{Software-Entwickler}{software-developer}}{}{}{}
+\cventry{2014}{\babel{Praktikum}{Intern}}{\babel{zwei Monate}{two month}, \enquote{innoscale AG}, \babel{Software-Entwickler}{software-developer}}{}{}{}
+\cventry{2014}{\babel{Werksstudent}{Working student}}{\enquote{Contelligence GmbH}, \babel{in Beratung, Vertrieb und Software-Entwicklung}{in consulting, marketing, sales and software-development}}{}{}{Konzeption und Entwicklung einer mobilen Microsoft-Office-Erweiterung zur Unterstützung der Compliance-Prozesse eines Unternehmens}
+\cventry{2014}{\babel{Praktikum}{Intern}}{\babel{zwei Monate}{two month}, \enquote{Contelligence GmbH}, \babel{in Beratung, Vertrieb und Software-Entwicklung}{in consulting, marketing, sales and software-development}}{}{}{}
+\cventry{2013}{\babel{Praktikum}{Intern}}{\babel{zwei Monate}{two month}, \enquote{DHL IT Services Prague}, Associate System Support Analyst}{}{}{}
+\cventry{2011 - 2013}{\babel{Tutor im Silentium}{Tutor}}{\enquote{Amos-Comenius-Gymnasium}}{}{}{}
+\cventry{2010 - 2013}{\babel{Nachhilfelehrer}{Private tutor}}{\babel{Mathe, Physik und Englisch}{Math, Physics and English}}{}{}{}
+\cventry{2009}{\babel{Praktikum}{Intern}}{\babel{zwei Wochen}{two weeks}, \enquote{Heuft Systemtechnik}}{}{}{}
+
+
+\section{\babel{Ehrenamtliche Tätigkeiten}{Volunteer work}}
+\cventry{2015- \babel{jetzt}{now}}{Website \babel{Admin}{admin}}{\enquote{Informationsdienst Umweltrecht e.V.}}{}{}{}
+\cventry{2013 - 2016}{\babel{Aktives Fachschaftsmitglied}{Member of student council}}{\enquote{Fachschaft WiWi}}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+%\section{Awards}
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\babel{Computer Kentnisse}{Computer skills}}
+
+
+\cvitem{\babel{Programmier- sprachen}{Programming languages}}{Java, Java Script (NodeJS, Coffee Script), SQL, MongoDB, Shell Scripting, \LaTeX , Haskell}
+\cvitem{Frameworks}{Meteor, React, Android Studio}
+\cvitem{\babel{Systeme}{Systems}}{\underline{Linux} (Android), Unix, Windows}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\babel{Sprachen}{Languages}}
+
+\cvitemwithcomment{\babel{Muttersprache}{Mothertongue}}{\babel{Deutsch}{German}}{}
+\cvitemwithcomment{\babel{Verhandlungs- sicher (C1)}{Business fluent}}{\babel{Englisch}{English}}{}
+\cvitemwithcomment{}{\babel{Latein, Französisch, Norwegisch}{Latin, French, Norwegian}}{}
+
+%\vspace{200px}
+%\SignatureAndDate{Max Inden}
+
+
+\end{document}
